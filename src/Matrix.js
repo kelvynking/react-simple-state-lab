@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class Matrix extends Component {
   genRow = (vals) => {
-    return vals.map((val) => <div className="cell"></div>);
+    return vals.map((val) => <Cell value={val} />);
   };
 
   genMatrix = () => {
